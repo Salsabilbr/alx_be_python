@@ -2,4 +2,3 @@
 print(seconds)
 seconds=7200
 print(seconds)
-print(seconds)
