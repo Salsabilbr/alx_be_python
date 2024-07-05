@@ -1,6 +1,6 @@
-operation = input("Choose the operation (+, -, *, /):")
-num1 = float(input("Enter the 1st number: "))
-num2 = float(input("Enter the 2nd number: "))
+operation = input("Choose the operation (+, -, *, /): ")
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 # Perform the calculation using Match Case  
 match operation:  
 case "+":
@@ -16,5 +16,5 @@ else:
     result = num1 / num2
     # Output the result  
 if "result": 
-    print(f"The result is {result}")  
+    print(f"The result is [result]")  
 
