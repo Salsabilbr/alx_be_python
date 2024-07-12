@@ -10,3 +10,5 @@ def calculate_future_date():
     future_date = current_date + datetime.timedelta(days=num_days)
     print("Future Date:", future_date.strftime("%Y-%m-%d"))
     calculate_future_date()
+    if __name__ == "__main__":
+    main()
