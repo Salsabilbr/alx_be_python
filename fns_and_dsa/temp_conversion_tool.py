@@ -25,5 +25,4 @@ def main():
         print("Invalid input. Please enter 'C' for Celsius or 'F' for Fahrenheit")
         except ValueEroor:
         print("Invalid remperature. Please enter a numeric values.")
-if __name__ == "__main__":
-    main()
+
