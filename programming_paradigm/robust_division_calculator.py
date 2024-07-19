@@ -1,3 +1,4 @@
+
 def safe_divide(numerator, denominator):  
    try:  
       numerator = float(numerator)  
@@ -8,8 +9,10 @@ def safe_divide(numerator, denominator):
         return f"The result of the division is {numerator / denominator}."  
    except ValueError:  
       return "Error: Please enter numeric values only."  
+
 import sys  
 from robust_division_calculator import safe_divide  
+
 def main():  
    if len(sys.argv)!= 3:  
       print("Usage: python main.py  ")  
