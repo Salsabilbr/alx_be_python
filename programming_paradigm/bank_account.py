@@ -39,4 +39,12 @@ def main():
       print("Invalid command. Supported commands: deposit, withdraw, display")
 if __name__ == "__main__":
    main()
+python main-0.py deposit 67  
+python main-0.py withdraw 20  
+python main-0.py withdraw 150  
+python main-0.py display  
+Deposited: $67.00  
+Withdrew: $20.00  
+Insufficient funds.  
+Current Balance: $47.00  
 
