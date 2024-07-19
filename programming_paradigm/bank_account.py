@@ -3,11 +3,13 @@ class BankAccount:
       self.__account_balance = initial_balance
    def deposit(self, amount):
       self.__account_balance += amount
-      print(f"Deposited: ${amount:.2f}")
+      return self.__account_balance += amount
    def withdraw(self, amount):  
-      if amount &gt; self.__account_balance:  
-        print("Insufficient funds.")  
-        return False  
+          if amount < self.__account_balance:
+             self.__account_balance -= amount
+      return True
+  else:
+      return False
       self.__account_balance -= amount  
       print(f"Withdrew: ${amount:.2f}")  
       return True
@@ -38,8 +40,4 @@ def main():
    else:
       print("Invalid command. Supported commands: deposit, withdraw, display")
 if __name__ == "__main__":
-   main()  
-python main-0.py deposit 67  
-python main-0.py withdraw 20  
-python main-0.py withdraw 150  
-python main-0.py display
+   main()
